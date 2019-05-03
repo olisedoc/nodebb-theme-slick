@@ -1,5 +1,5 @@
 {
-	"id": "nodebb-theme-slick",
+	"id": "nodebb-theme-slick-shivers",
 	"library": "./lib/theme.js",
 	"hooks": [
 		{

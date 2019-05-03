@@ -1,7 +1,7 @@
 {
-    "id": "nodebb-theme-slick",
-    "name": "Slick theme",
-    "description": "Slick theme for NodeBB",
-    "url": "https://github.com/pichalite/nodebb-theme-slick",
+    "id": "nodebb-theme-slick-shivers",
+    "name": "Slick Shivers theme",
+    "description": "Slick theme for NodeBB modified for ShiversTribe",
+    "url": "https://github.com/olisedoc/nodebb-theme-slick-shivers/",
     "screenshot": "screenshot.png"
 }

@@ -1,14 +1,14 @@
 {
-  "name": "nodebb-theme-slick",
+  "name": "nodebb-theme-slick-shivers",
   "version": "1.2.20",
   "nbbpm": {
     "compatibility": "^1.11.0"
   },
-  "description": "Slick theme for NodeBB",
+  "description": "Slick theme for NodeBB modified for Shivers",
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pichalite/nodebb-theme-slick.git"
+    "url": "git+https://github.com/olisedoc/nodebb-theme-slick-shivers.git"
   },
   "keywords": [
     "nodebb",
@@ -20,13 +20,14 @@
     "name": "pichalite",
     "email": "pichalite.com@gmail.com"
   },
-  "bugs": {
-    "url": "https://github.com/pichalite/nodebb-theme-slick/issues"
-  },
   "maintainers": [
     {
       "name": "pichalite",
       "email": "pichalite.com@gmail.com"
+    },
+    {
+      "name": "olisedoc",
+      "email": "osedoc@gmail.com"
     }
   ]
 }
