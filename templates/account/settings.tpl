@@ -235,12 +235,6 @@
 				<!-- ENDIF !config.disableChat -->
 			</div>
 
-			<!-- BEGIN customSettings -->
-			<h4>{customSettings.title}</h4>
-			<div class="user-setting">
-				{customSettings.content}
-			</div>
-			<!-- END customSettings -->
 
 		</div>
 	</div>

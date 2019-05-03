@@ -3,7 +3,7 @@
 
 	<div class="row">
 		<!-- IF allowLocalLogin -->
-		<div class="col-md-12">
+		<div class="col-md-6 col-md-offset-3">
 			<div class="login-block">
 				<div class="alert alert-danger" id="login-error-notify" <!-- IF error -->style="display:block"<!-- ELSE -->style="display: none;"<!-- ENDIF error -->>
 					<button type="button" class="close" data-dismiss="alert">&times;</button>

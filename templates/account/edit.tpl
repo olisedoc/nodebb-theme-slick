@@ -78,13 +78,6 @@
 						</div>
 
 						<div class="form-group">
-							<label class="control-label" for="inputBirthday">[[user:birthday]]</label>
-							<div class="controls">
-								<input class="form-control" id="inputBirthday" value="{birthday}" placeholder="mm/dd/yyyy">
-							</div>
-						</div>
-
-						<div class="form-group">
 							<label class="control-label" for="grouptitle">[[user:grouptitle]]</label>
 							<div class="controls">
 								<select class="form-control" id="groupTitle" data-property="groupTitle" <!-- IF allowMultipleBadges --> multiple<!-- ENDIF allowMultipleBadges -->>

@@ -1,4 +1,4 @@
-<div id="chat-modal" class="chat-modal hide" tabindex="-1" role="dialog" aria-labelledby="Chat" aria-hidden="true" data-backdrop="none">
+<div id="chat-modal" class="chat-modal hide" tabindex="-1" role="dialog" aria-labelledby="Chat" aria-hidden="true" data-backdrop="none" style="z-index: 1;">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">

@@ -4,7 +4,7 @@
 		<!-- IF users.picture -->
 		<img class="user-avatar" src="{users.picture}" alt="{users.username}" />
 		<!-- ELSE -->
-		<div class="user-icon" style="background-color: {users.icon:bgColor};">{users.icon:text}</div>
+		<div class="user-icon" style="background-color: #A36445;">{users.icon:text}</div>
 		<!-- ENDIF users.picture -->
 	</a>
 
@@ -13,12 +13,6 @@
 			<i component="user/status" class="fa fa-circle status {users.status}" title="[[global:{users.status}]]"></i>
 			<a href="{config.relative_path}/user/{users.userslug}">{users.username}</a>
 		</span>
-
-		<!-- IF section_joindate -->
-		<div title="joindate" class="joindate">
-			<span class="timeago" title="{users.joindateISO}"></span>
-		</div>
-		<!-- ENDIF section_joindate -->
 
 		<!-- IF section_sort-reputation -->
 		<div title="reputation" class="reputation">
