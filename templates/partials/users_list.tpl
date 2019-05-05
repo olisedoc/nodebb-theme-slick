@@ -16,7 +16,7 @@
 
 		<div title="testing" class="test">
 			<i class="fa fa-star"></i>
-			<pre id="json">{users}</pre>
+			<span>{users.fullname}</span>
 		</div>
 		
 
