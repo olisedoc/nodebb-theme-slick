@@ -14,6 +14,12 @@
 			<a href="{config.relative_path}/user/{users.userslug}">{users.username}</a>
 		</span>
 
+		<div title="testing" class="test">
+			<i class="fa fa-star"></i>
+			<pre id="json">{users}</pre>
+		</div>
+		
+
 		<!-- IF section_sort-reputation -->
 		<div title="reputation" class="reputation">
 			<i class="fa fa-star"></i>
