@@ -34,8 +34,7 @@
 		"lib/slick.js",
 		"lib/modules/slideout.min.js",
 		"lib/chats.js",
-		"lib/quickreply.js",
-		"lib/users.js"
+		"lib/quickreply.js"
 	],
 	"acpScripts": [
 		"lib/admin.js"
