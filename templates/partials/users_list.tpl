@@ -11,14 +11,14 @@
 	<div class="user-info">
 		<span class="username">
 			<i component="user/status" class="fa fa-circle status {users.status}" title="[[global:{users.status}]]"></i>
-			<a href="{config.relative_path}/user/{users.userslug}">{users.username}</a>
+			<a href="{config.relative_path}/user/{users.userslug}">
+				<!-- IF users.fullname -->
+				{users.fullname}
+				<!-- ELSE -->
+				{users.username}
+				<!-- ENDIF users.fullname -->
+			</a>
 		</span>
-
-		<div title="testing" class="test">
-			<i class="fa fa-star"></i>
-			<span>{users.fullname}</span>
-		</div>
-		
 
 		<!-- IF section_sort-reputation -->
 		<div title="reputation" class="reputation">
