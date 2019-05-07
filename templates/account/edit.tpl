@@ -77,6 +77,8 @@
 							</div>
 						</div>
 
+						<!-- IMPORT partials/account/custom_fields_flex.tpl -->
+
 						<div class="form-group">
 							<label class="control-label" for="grouptitle">[[user:grouptitle]]</label>
 							<div class="controls">
