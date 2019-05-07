@@ -7,14 +7,25 @@
 				<!-- IF picture -->
 				<img id="user-current-picture" class="user-avatar" src="{picture}" alt="{username}" />
 				<!-- ELSE -->
-				<div class="user-icon" style="background-color: {icon:bgColor};">{icon:text}</div>
+				<div class="user-icon" style="background-color: {icon:bgColor};">
+					{icon:text}
+				</div>
 				<!-- ENDIF picture -->
 				<i component="user/status" class="fa fa-circle status {status}" title="[[global:{status}]]"></i>
 				<h1 class="fullname">
-					<!-- IF fullname -->{fullname}
-					<!-- ELSE -->{username}
+					<!-- IF fullname -->
+					{fullname}
+					<!-- ELSE -->
+					{username}
 					<!-- ENDIF fullname -->
 				</h1>
+				<!-- BEGIN customFields -->
+					<!-- IF @first -->
+					<h4 class="username">
+						{../value}
+					</h4>
+					<!-- ENDIF @first -->
+				<!-- END customFields -->
 				<h4 class="username">
 					<!-- IF !banned -->@{username}
 					<!-- ELSE -->[[user:banned]]
