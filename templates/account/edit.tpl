@@ -77,7 +77,29 @@
 							</div>
 						</div>
 
-						<!-- IMPORT partials/account/custom_fields_flex.tpl -->
+						<!-- IF customFields.fields -->
+						<!-- BEGIN customFields.fields -->
+						<div class="form-group">
+							<label class="control-label" >{../prompt}</label>
+							<div class="controls">
+						<!-- IF !function.isFieldDropdown, @value -->
+								<input class="form-control" type={../type} id="customFields{@index}" placeholder="{../name}" value="<!-- IF ../value -->{../value}<!-- ENDIF ../value -->">
+						<!-- ENDIF !function.isFieldDropdown, @value -->
+						<!-- IF function.isFieldDropdown, @value -->
+								<select class="form-control" id="customFields{@index}" data-property="customFields{@index}" multiple >
+									<option value="CHOOSE">Choose field of work</option>
+									<!-- IF ../options -->
+									<!-- BEGIN ../options -->
+									<option value="{../options.id}" >{../options.text}</option>
+									<!-- END ../options -->
+									<!-- ENDIF ../options -->
+								</select>
+						<!-- ENDIF function.isFieldDropdown, @value -->
+							</div>
+						</div>
+						<!-- END customFields.fields -->
+						<!-- ENDIF customFields.fields -->
+						
 
 						<div class="form-group">
 							<label class="control-label" for="grouptitle">[[user:grouptitle]]</label>
