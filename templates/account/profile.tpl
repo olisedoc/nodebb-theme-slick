@@ -58,8 +58,35 @@
 			</div>
 
 			<!-- IF aboutme -->
-			<span component="aboutme" class="text-center aboutme">{aboutme}</span>
+			<div class="account-stats">
+				<span component="aboutme" class="text-center aboutme">{aboutme}</span>
+			</div>
 			<!-- ENDIF aboutme -->
+
+			<div class="text-center profile-meta">
+				<span>[[user:joined]]</span>
+				<strong class="timeago" title="{joindateISO}"></strong>
+
+				<!-- IF email -->
+				<span>[[user:email]]</span>
+				<strong><i class="fa fa-eye-slash {emailClass}" title="[[user:email_hidden]]"></i> {email}</strong>
+				<!-- ENDIF email -->
+
+				<!-- IF websiteName -->
+				<span>[[user:website]]</span>
+				<strong><a href="{websiteLink}" rel="nofollow noopener noreferrer">{websiteName}</a></strong>
+				<!-- ENDIF websiteName -->
+
+				<!-- IF location -->
+				<span>[[user:location]]</span>
+				<strong>{location}</strong>
+				<!-- ENDIF location -->
+
+				<!-- IF age -->
+				<span>[[user:age]]</span>
+				<strong>{age}</strong>
+				<!-- ENDIF age -->
+			</div>
 
 			<div class="account-stats">
 				<!-- IF !reputation:disabled -->
@@ -88,34 +115,6 @@
 					<div class="human-readable-number" title="{followingCount}">{followingCount}</div>
 					<span class="stat-label">[[user:following]]</span>
 				</div>
-			</div>
-
-			<div class="text-center profile-meta">
-				<span>[[user:joined]]</span>
-				<strong class="timeago" title="{joindateISO}"></strong>
-
-				<span>[[user:lastonline]]</span>
-				<strong class="timeago" title="{lastonlineISO}"></strong><br />
-
-				<!-- IF email -->
-				<span>[[user:email]]</span>
-				<strong><i class="fa fa-eye-slash {emailClass}" title="[[user:email_hidden]]"></i> {email}</strong>
-				<!-- ENDIF email -->
-
-				<!-- IF websiteName -->
-				<span>[[user:website]]</span>
-				<strong><a href="{websiteLink}" rel="nofollow noopener noreferrer">{websiteName}</a></strong>
-				<!-- ENDIF websiteName -->
-
-				<!-- IF location -->
-				<span>[[user:location]]</span>
-				<strong>{location}</strong>
-				<!-- ENDIF location -->
-
-				<!-- IF age -->
-				<span>[[user:age]]</span>
-				<strong>{age}</strong>
-				<!-- ENDIF age -->
 			</div>
 		</div>
 	</div>
