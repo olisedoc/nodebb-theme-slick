@@ -9,7 +9,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- IF picture -->
-						<img id="user-current-picture" class="user-avatar" src="{picture}" />
+						<img id="user-current-picture" class="user-avatar" src="{picture}?{lastonline}" />
 						<!-- ELSE -->
 						<div class="user-icon" style="background-color: {icon:bgColor};">{icon:text}</div>
 						<!-- ENDIF picture -->

@@ -5,7 +5,7 @@
 		<div class="col-xs-12">
 			<div class="user-info" data-uid="{uid}">
 				<!-- IF picture -->
-				<img id="user-current-picture" class="user-avatar" src="{picture}" alt="{username}" />
+				<img id="user-current-picture" class="user-avatar" src="{picture}?{lastonline}" alt="{username}" />
 				<!-- ELSE -->
 				<div class="user-icon" style="background-color: {icon:bgColor};">
 					{icon:text}

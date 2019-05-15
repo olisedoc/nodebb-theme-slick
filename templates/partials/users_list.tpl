@@ -2,7 +2,7 @@
 <li class="users-box registered-user" data-uid="{users.uid}">
 	<a href="{config.relative_path}/user/{users.userslug}">
 		<!-- IF users.picture -->
-		<img class="user-avatar" src="{users.picture}" alt="{users.username}" />
+		<img class="user-avatar" src="{users.picture}?{lastonline}" alt="{users.username}" />
 		<!-- ELSE -->
 		<div class="user-icon" style="background-color: #A36445;">{users.icon:text}</div>
 		<!-- ENDIF users.picture -->
