@@ -19,17 +19,11 @@
 					{username}
 					<!-- ENDIF fullname -->
 				</h1>
-				<!-- BEGIN customFields -->
-					<!-- IF @first -->
-					<h4 class="username">
-						{../value}
-					</h4>
-					<!-- ENDIF @first -->
-				<!-- END customFields -->
-				<h4 class="username">
-					<!-- IF !banned -->@{username}
-					<!-- ELSE -->[[user:banned]]
-					<!-- ENDIF !banned -->
+				<h4 class="title">
+					{getTitle(customFields)}
+				</h4>
+				<h4 class="field-of-work">
+					{getFieldOfWork(customFields)}
 				</h4>
 
 				<!-- IF isAdminOrGlobalModeratorOrModerator -->

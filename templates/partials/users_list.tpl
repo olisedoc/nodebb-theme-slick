@@ -21,12 +21,12 @@
 						</span>
 					</div>
 					
-					<div title="Title" class="title">
+					<div class="title" title="Title">
 						<span >{getTitle(users.customFields)}</span>
 					</div>
 					
 					<!-- IF users.location -->
-					<div title="location" class="location">
+					<div class="location" title="location">
 						<span>{users.location}</span>
 					</div>
 					<!-- ENDIF user.location -->
