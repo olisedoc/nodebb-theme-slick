@@ -22,19 +22,21 @@
 
 	<div class="row">
 		<div class="col-xs-12">
-			<ul id="users-container" class="users-container">
-				<!-- IMPORT partials/users_list.tpl -->
+			<div id="users-container" class="users-container">
+				<div class="row px-xl">
+					<!-- IMPORT partials/users_list.tpl -->
+				</div>
 				<!-- IF anonymousUserCount -->
-				<li class="users-box anon-user">
+				<div class="users-box anon-user">
 					<div class="user-icon">G</div>
 					<br/>
 					<div class="user-info">
 						<span id="online_anon_count">{anonymousUserCount}</span>
 						<span>[[global:guests]]</span>
 					</div>
-				</li>
+				</div>
 				<!-- ENDIF anonymousUserCount -->
-			</ul>
+			</div>
 		</div>
 	</div>
 

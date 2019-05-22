@@ -1,42 +1,62 @@
-.users-container {
-    list-style: none;
-    margin-top: 20px;
-    padding-inline-start: unset;
-    text-align: center;
+.user-avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 4px;
+}
 
-    .users-box {
-        display: inline-block;
-        text-align: center;
-		vertical-align: top;
-		text-overflow: ellipsis;
-		overflow: hidden;
-		margin: 10px;
-		
-        .user-avatar {
-            .user-avatar(250px);
-        }
-        
-        .user-icon {
-            .user-icon(250px, 7em);
-        }
-        
-        &.anon-user {
-            .user-icon {
-                background: #bbb;
-                color: #fff;
-            }
-        }
-        
-        .user-info {
-            padding-top: 5px;
-            
-            .username {
-                max-width: 240px;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-                display: inline-block;
-            }
-        }
+.user-icon {
+    width: 250px;
+    height: 250px;
+    border-radius: 4px;
+    line-height: 250px;
+    text-align: center;
+    color: #fff;
+    font-size: 7em;
+    font-weight: 700;
+}
+
+.user-box {
+    display: flex;
+
+    .info {
+        padding-left: 2em;
+    }
+}
+
+.user-info-box {
+    height: 250px;
+    display: flex;
+
+    .user-info-item {
+        align-self: flex-end;
+        font-size: 1.3em;
+    }
+}
+
+.px {
+    &-1 {
+        .px(1px)
+    }
+    &-xs {
+        .px(.25em)
+    }
+    &-sm {
+        .px(.5em)
+    }
+    &-md {
+        .px(1em)
+    }
+    &-lg {
+        .px(2em)
+    }
+    &-xl {
+        .px(3em)
+    }   
+}
+
+.sh-grid {
+
+    .item {
+
     }
 }

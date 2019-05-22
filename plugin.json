@@ -25,16 +25,14 @@
 		},
 		{
 			"hook": "filter:meta.getLinkTags", "method": "getLinkTags"
-		},
-		{
-			"hook": "filter:users.addFields", "method": "addFields"
 		}
 	],
 	"scripts": [
 		"lib/slick.js",
 		"lib/modules/slideout.min.js",
 		"lib/chats.js",
-		"lib/quickreply.js"
+		"lib/quickreply.js",
+		"lib/helpers.js"
 	],
 	"acpScripts": [
 		"lib/admin.js"

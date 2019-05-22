@@ -1,45 +1,38 @@
 <!-- BEGIN users -->
-<li class="users-box registered-user" data-uid="{users.uid}">
-	<a href="{config.relative_path}/user/{users.userslug}">
-		<!-- IF users.picture -->
-		<img class="user-avatar" src="{users.picture}?{lastonline}" alt="{users.username}" />
-		<!-- ELSE -->
-		<div class="user-icon" style="background-color: #A36445;">{users.icon:text}</div>
-		<!-- ENDIF users.picture -->
-	</a>
-
-	<div class="user-info">
-		<span class="username">
-			<i component="user/status" class="fa fa-circle status {users.status}" title="[[global:{users.status}]]"></i>
+<div class="col-xs-12 col-lg-6 px-xl" data-uid="{users.uid}">
+	<div class="user-box">
+		<div>
 			<a href="{config.relative_path}/user/{users.userslug}">
-				<!-- IF users.fullname -->
-				{users.fullname}
+				<!-- IF users.picture -->
+				<img class="user-avatar" src="{users.picture}?{users.lastonline}" alt="{users.username}" />
 				<!-- ELSE -->
-				{users.username}
-				<!-- ENDIF users.fullname -->
+				<div class="user-icon" style="background-color: #A36445;">{users.icon:text}</div>
+				<!-- ENDIF users.picture -->
 			</a>
-		</span>
-
-		<!-- IF section_sort-reputation -->
-		<div title="reputation" class="reputation">
-			<i class="fa fa-star"></i>
-			<span class="formatted-number">{users.reputation}</span>
 		</div>
-		<!-- ENDIF section_sort-reputation -->
-
-		<!-- IF section_sort-posts -->
-		<div title="post count" class="post-count">
-			<i class="fa fa-pencil"></i>
-			<span class="formatted-number">{users.postcount}</span>
+		<div class="info">
+			<div class="user-info-box">
+				<div class="user-info-item">
+					<div class="username">
+						<span>
+							<a href="{config.relative_path}/user/{users.userslug}">
+								<!-- IF users.fullname -->{users.fullname}<!-- ELSE -->{users.username}<!-- ENDIF users.fullname -->
+							</a>
+						</span>
+					</div>
+					
+					<div title="Title" class="title">
+						<span >{getTitle(users.customFields)}</span>
+					</div>
+					
+					<!-- IF users.location -->
+					<div title="location" class="location">
+						<span>{users.location}</span>
+					</div>
+					<!-- ENDIF user.location -->
+				</div>
+			</div>
 		</div>
-		<!-- ENDIF section_sort-posts -->
-
-		<!-- IF section_flagged -->
-		<div title="flag count" class="flag-count">
-			<i class="fa fa-flag"></i>
-			<span class="formatted-number"><a href="{config.relative_path}/posts/flags?byUsername={users.username}">{users.flags}</a></span>
-		</div>
-		<!-- ENDIF section_flagged -->
 	</div>
-</li>
+</div>
 <!-- END users -->
